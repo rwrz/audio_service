@@ -989,12 +989,15 @@ class AudioService {
     required T Function() builder,
     AudioServiceConfig? config,
     BaseCacheManager? cacheManager,
+    bool ensureInitialized = true,
   }) async {
     assert(_cacheManager == null);
     config ??= const AudioServiceConfig();
     assert(config.fastForwardInterval > Duration.zero);
     assert(config.rewindInterval > Duration.zero);
-    WidgetsFlutterBinding.ensureInitialized();
+    if (ensureInitialized) {
+      WidgetsFlutterBinding.ensureInitialized();
+    }
     _cacheManager = (cacheManager ??= DefaultCacheManager());
     final callbacks = _HandlerCallbacks();
     _platform.setHandlerCallbacks(callbacks);
