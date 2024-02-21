@@ -1,3 +1,8 @@
+## 0.18.13
+
+* Fix setAndroidPlaybackInfo call blocking (@julianscheel).
+* Pass through missing extras to playFrom.../prepareFrom... (@Ruchit2759).
+
 ## 0.18.12
 
 * Fix crash with Oppo/OnePlus devices running Android 13.
