@@ -1,5 +1,8 @@
 ## 0.18.13
 
+* Fix Android NPE in sendNotificationClicked and onConnected.
+* Catch and broadcast async platform exceptions.
+* Support js '>=0.6.3 <0.8.0'
 * Fix setAndroidPlaybackInfo call blocking (@julianscheel).
 * Pass through missing extras to playFrom.../prepareFrom... (@Ruchit2759).
 
