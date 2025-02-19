@@ -1,3 +1,11 @@
+## 0.18.17
+
+* Add support for SwiftPM.
+
+## 0.18.16
+
+* Support MPNowPlayingInfoPropertyIsLiveStream on IOS (@MuradSh, @celsoft).
+
 ## 0.18.15
 
 * Add deep link support for FlutterFragmentActivity (@jan-milovanovic).
